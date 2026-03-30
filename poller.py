@@ -15,10 +15,10 @@ load_dotenv()
 
 # Supabase setup
 SUPABASE_URL = os.getenv("SUPABASE_URL")
-SUPABASE_KEY = os.getenv("SUPABASE_SERVICE_KEY")  # Service role key needed for inserts
+SUPABASE_KEY = os.getenv("SUPABASE_ANON_KEY")
 
 if not SUPABASE_URL or not SUPABASE_KEY:
-    raise ValueError("Missing SUPABASE_URL or SUPABASE_SERVICE_KEY in environment")
+    raise ValueError("Missing SUPABASE_URL or SUPABASE_ANON_KEY in environment")
 
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 

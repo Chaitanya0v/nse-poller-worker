@@ -1,4 +1,4 @@
 nsepython==2.4
 supabase==2.3.4
-python-dotenv==1.0.0
+python-dotenv==1.2.2
 pytz==2024.1
